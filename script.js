@@ -83,7 +83,8 @@ function specifics() {
 }
 
 function clipboard() {
-  alert("Hiiii");
+  alert("Copy Password");
+  clipboard();
 }
 
 document.getElementById("generate").addEventListener("click", function() {
