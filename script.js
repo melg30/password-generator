@@ -89,4 +89,14 @@ function clipboard() {
 
 document.getElementById("generate").addEventListener("click", function() {
   specifics();
+
+  document.getElementById("clipboard").addEventListener("click", clipboard);
+
+  function clipboard() {
+    var copyText = document.querySelector("#password");
+
+    copyText.select();
+
+    document.execCommand("copy");
+  }
 });
